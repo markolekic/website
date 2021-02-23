@@ -1,0 +1,52 @@
+//Main style
+$max-width: 960px;
+$font-family: 'Lato',
+sans-serif;
+$font-family-footer: 'Lato',
+sans-serif;
+$white-color: #fff;
+$orange-color: #FE992A;
+$light-orange-color: #F7A27D;
+$ultra-light-orange: #FFE0BF;
+$dark-grey: rgb(124, 120, 120);
+$light-grey: #F6F6F8;
+$light-red: #E56C69;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.freeze-me {
+    overflow: hidden;
+}
+
+/***First page ***/
+
+@import 'header';
+@import 'dropdown';
+@import 'queries-nav';
+@import 'image-slider';
+@import 'text-slider';
+@import 'footer';
+@import 'buttons-home';
+
+/****Second page****/
+
+@import 'sweeper';
+@import 'accordian';
+@import 'textblock';
+@import 'text-slider';
+
+/***Third page ***/
+
+@import 'global';
+@import 'hero';
+@import 'personal';
+@import 'donation';
+@import 'buttons-steps';

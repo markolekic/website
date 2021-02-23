@@ -1,0 +1,134 @@
+//Media queries-NAVBAR//
+//--------------
+
+@media only screen and (max-width: 1200px) {
+
+    .logo {
+        padding-left: 25px;
+        transition: .2s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+    .nav-container {
+        width: 100% !important;
+    }
+
+    .main-nav {
+        background-color: $orange-color;
+    }
+
+    .text-block {
+        width: 500px;
+        margin-top: 250px;
+    }
+
+    .sub-menu {
+        width: 100%;
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav-container {
+        position: fixed;
+    }
+
+    .nav-menu {
+        display: none;
+        overflow: auto;
+        position: absolute;
+        top: 91px;
+        right: 0;
+        height: 100vh;
+
+        .menu-list {
+            flex-direction: column;
+            background-color: $orange-color;
+            overflow: auto;
+            height: calc(100vh - 90px);
+            width: 550px;
+            font-weight: 400 !important;
+            font-size: 15px !important;
+
+            .li {
+                padding-top: 5px;
+            }
+        }
+
+        .main-menu-title {
+            padding: 10px !important;
+        }
+
+        .menu-list li:hover {
+            color: #fff;
+            background-color: transparent;
+            cursor: pointer;
+
+            a {
+                color: #fff;
+            }
+        }
+
+        .menu-list li:nth-child(2):hover {
+            .sub-menu {
+                display: none;
+            }
+        }
+    }
+
+    .industrial-drop:hover::before {
+        all: unset;
+    }
+
+    .text-headline {
+        font-size: 50px;
+    }
+
+    .text-description {
+        font-size: 18px;
+    }
+
+    .sub-menu {
+        padding: 0;
+        flex-direction: column;
+        background-color: $orange-color;
+        position: relative;
+        margin-top: 5px;
+        margin-left: 10px;
+        color: #fff;
+
+        li:first-child {
+            font-size: 18px !important;
+            padding-bottom: 10px !important;
+            padding-top: 10px !important;
+            font-weight: 700;
+        }
+
+        li {
+            padding: 0 !important;
+        }
+
+        .dropdown-menu {
+            width: 100%;
+        }
+    }
+
+    .toggle-button {
+        display: flex !important;
+    }
+}
+
+@media only screen and (max-width: 601px) {
+    .menu-list {
+        width: 400px !important;
+    }
+}
+
+@media only screen and (max-width: 488px) {
+    .menu-list {
+        max-width: 300px !important;
+    }
+}

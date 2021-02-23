@@ -1,0 +1,131 @@
+//HEADER
+
+header {
+    z-index: 999;
+    position: relative;
+    margin: 0 auto;
+    background-color: $orange-color;
+    color: #fff;
+
+    .nav-container {
+        margin: 0 auto;
+        width: $max-width;
+
+        .main-nav {
+            display: flex;
+            height: 93px;
+            position: relative;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            align-items: center;
+            justify-content: space-between;
+
+            .toggle-button {
+                position: absolute;
+                right: 1.3rem;
+                display: none;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 40px;
+                height: 25px;
+            }
+
+            .close-submenu {
+                position: absolute;
+                right: 12rem;
+                display: none;
+                flex-direction: column;
+                height: 20px;
+                background-color: none !important;
+            }
+
+            .toggle-button {
+                padding: 0;
+
+                .bar {
+                    height: 3px;
+                    width: 100%;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    transition: 0.4s;
+                }
+            }
+
+            .toggle-button.open span:nth-child(1) {
+                -webkit-transform: rotate(135deg);
+                -moz-transform: rotate(135deg);
+                -o-transform: rotate(135deg);
+                transform: rotate(135deg);
+                margin-top: .9rem;
+            }
+
+            .toggle-button.open span:nth-child(2) {
+                opacity: 0;
+                left: -60px;
+            }
+
+            .toggle-button.open span:nth-child(3) {
+                -webkit-transform: rotate(-135deg);
+                -moz-transform: rotate(-135deg);
+                -o-transform: rotate(-135deg);
+                transform: rotate(-135deg);
+                margin-bottom: .6rem;
+            }
+
+            .menu-list {
+                display: flex;
+                font-weight: 700;
+                font-size: 15px;
+
+                li {
+                    padding: 20px 25px 20px 25px;
+
+                    a {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Hovers//
+//-------
+
+.menu-list li:hover {
+    color: #FE992A;
+    background-color: #C9DCE0;
+    cursor: pointer;
+
+    a {
+        color: $orange-color;
+    }
+}
+
+.menu-list li:nth-child(2):hover {
+    background-color: #fff;
+
+    .sub-menu {
+        display: flex;
+    }
+}
+
+.sub-menu li:hover {
+    background-color: #fff;
+}
+
+.sub-menu li:nth-child(1):hover {
+    color: inherit;
+    cursor: default;
+}
+
+.industrial-drop:hover::before {
+    content: "";
+    width: 81px;
+    top: 75px;
+    margin-left: -25px;
+    position: absolute;
+    background-color: #fff;
+    padding: 25px;
+    transition: .2 ease-in-out;
+}

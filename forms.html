@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Homepage</title>
+</head>
+
+<body>
+
+    <body>
+        <!--start of header-->
+        <header id="header-section">
+            <!--start of nav container-->
+            <div class="nav-container">
+                <nav class="main-nav">
+                    <div class="logo">
+                        <img src="img/leaf.png" alt="Logo">
+                    </div>
+                    <!--hamburger menu-->
+                    <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                    <!--end of hamburger menu-->
+                    <div class="nav-menu">
+                        <ul class="menu-list">
+                            <li class="main-menu-title"><a href="index.html">Commercial</a></li>
+                            <!--Industrial menu-->
+                            <li class="main-menu-title industrial-drop">Industrial &#9662;
+                                <!--start od sub menu-->
+                                <div class="sub-menu">
+                                    <ul class="dropdown-menu first-sub-menu">
+                                        <li>Proin tristinque</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Dolor sit amet</li>
+                                        <li>Consectetur adipiscim elit</li>
+                                        <li>Vivamus pretium</li>
+                                        <li>Mauris ficilies vestibulium prottitor</li>
+                                        <li>Lacus actu comando orci</li>
+                                    </ul>
+                                    <ul class="dropdown-menu second-sub-menu">
+                                        <li>Duit hendrerit mauris</li>
+                                        <li>Duit hendrerit ligula</li>
+                                        <li>Et utrices masa loborotis sed</li>
+                                        <li>Crass efictuar</li>
+                                        <li>Aliqum ipsum rutrum fermentum</li>
+                                        <li>Aenen grafida congue mauris vitae varis eros dictim vehickla</li>
+                                        <li>Man mattis</li>
+                                        <li>Lectus vitae iaclus accumsan</li>
+                                    </ul>
+                                    <ul class="dropdown-menu third-sub-menu">
+                                        <li>Cras sit amet</li>
+                                        <li>Quisque feugiat feugiat efficitur</li>
+                                        <li>Cras mut ulamorcet dul</li>
+                                        <li>A tinicudunt nisi</li>
+                                        <li>Sed fugiat lorem vitae magna</li>
+                                        <li>Pellentesque carsus</li>
+                                        <li>Sed id eulsmod erat id maximus me</li>
+                                    </ul>
+                                </div>
+                                <!--end of sub menu-->
+                            </li>
+                            <!--End Industrial menu-->
+                            <li class="main-menu-title"><a href="slider.html">Infrastructure</a></li>
+                            <li class="main-menu-title"><a href="forms.html">Resources</a></li>
+                            <li class="main-menu-title">Utilities</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!--end of nav container-->
+        </header>
+        <!--end header-->
+
+        <!--hero section-->
+        <section id="hero-section">
+            <div class="hero-container">
+                <div class="resaurces">
+                    <h1 class="">Resources</h1>
+                </div>
+                <div class="donations">
+                    <h2>Donations</h2>
+                </div>
+            </div>
+        </section>
+        <!--end of hero section-->
+        <!--dynamic buttons-->
+        <div id="buttons-steps">
+            <div class="buttons-container-steps">
+                <div id="first-btn" class="changing-buttons active-step">1. Donate</div>
+                <div id="second-btn" class="changing-buttons next-step">2. Personal</div>
+                <div id="third-btn" class="changing-buttons next-step">3. Donation info</div>
+                <div id="forth-btn" class="changing-buttons next-step">4. Payment</div>
+                <div id="fifth-btn" class="changing-buttons next-step">5. Confirmation</div>
+            </div>
+        </div>
+        <!--Start of Form section-->
+        <section id="step-section">
+            <!--Form container-->
+            <div class="form-container">
+                <form class="commercial-form active-form">
+                    <!--Start of left side-->
+                    <div class="left-side-section">
+                        <h1>About you</h1>
+                        <div class="orange-line"></div>
+                        <div class="baseline-container">
+                            <label id="title-1">Title</label>
+                            <select name="gender">
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                            </select>
+                        </div>
+                        <div class="baseline-container checked">
+                            <label id="first-name-1">First name</label>
+                            <input type="text" placeholder="John">
+                        </div>
+                        <div class="baseline-container">
+                            <label id="last-name-1">Last name</label>
+                            <input type="text" placeholder="Enter your last name">
+                        </div>
+                        <div class="baseline-container">
+                            <label id="email">Email</label>
+                            <input type="email" placeholder="Enter your email adress">
+                        </div>
+                    </div>
+                    <!--End of left side section-->
+                    <!--Start of right side-->
+                    <div class="right-side-section your-gift">
+                        <h1>Your gift</h1>
+                        <div class="orange-line"></div>
+                        <div class="donate-buttons">
+                            <div class="donation-div">
+                                <label id="donation">Donation</label>
+                            </div>
+                            <div class="buttons-for-donation">
+                                <a href="#" class="btn btn-grey">One-off Gift</a>
+                                <a href="#" class="btn btn-orange">Regular giving</a><br>
+                            </div>
+                        </div>
+                        <div class="baseline-container money">
+                            <label id="five-euros">5&euro; a month</label>
+                            <input type="radio" name="selectAmount" value="5"><br>
+                            <label id="ten-euros">10&euro; a month</label>
+                            <input type="radio" name="selectAmount" value="10"><br>
+                            <label id="twenty-euros">20&euro; a month</label>
+                            <input type="radio" name="selectAmount" value="20"><br>
+                            <label id="twenty-five">25&euro; a month</label>
+                            <input type="radio" name="selectAmount" value="25"><br>
+                        </div>
+                        <div class="button-next-step">
+                            <a class="btn btn-orange wide" href="#">Next step</a>
+                        </div>
+                    </div>
+                    <!--End of righ side-->
+                </form>
+                <!--PERSONAL INFO FORM-->
+                <form class="personal-info-form">
+                    <!--Start of left side-->
+                    <div class="left-side-section">
+                        <h1>Personal details</h1>
+                        <div class="orange-line"></div>
+                        <div class="baseline-container">
+                            <label id="title-2">Title</label>
+                            <select name="gender">
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                            </select>
+                        </div>
+                        <div class="baseline-container">
+                            <label id="first-name-2">First name</label>
+                            <input type="text" placeholder="Enter yout first name">
+                        </div>
+                        <div class="baseline-container checked">
+                            <label id="last-name-2">Last name</label>
+                            <input type="text" placeholder="Malkovich">
+                        </div>
+                        <div class="baseline-container">
+                            <label id="mobile">Mobile</label>
+                            <input type="number" placeholder="Enter your mobile phone number">
+                        </div>
+                    </div>
+                    <!--End of left side section-->
+                    <!--Start of right side-->
+                    <div class="left-side-section">
+                        <h1>Billing address</h1>
+                        <div class="orange-line"></div>
+                        <div class="baseline-container">
+                            <label id="post-label">Postcode</label>
+                            <input id="postcode" type="number" placeholder="Postcode">
+                        </div>
+                        <div class="baseline-container">
+                            <label id="house-number-label">House number</label>
+                            <input id="house-number" type="text" placeholder="Enter yout first name">
+                        </div>
+                        <div class="baseline-container">
+                            <label id="street">Street</label>
+                            <input type="text" placeholder="Enter your street name">
+                        </div>
+                        <div class="baseline-container">
+                            <label id="city">City</label>
+                            <input type="email" placeholder="Enter your city name">
+                        </div>
+                        <div class="baseline-container not-checked">
+                            <label id="country">Country</label>
+                            <input type="text" placeholder="Enter your country name">
+                        </div>
+                        <div class="baseline-container checkbox-div">
+                            <input type="checkbox" id="check-me">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, iure similique tenetur
+                                aliquam corrupti eveniet non omnis itaque placeat explicabo!
+                            </p>
+                        </div>
+                        <div class="button-next-step">
+                            <a class="btn btn-orange wide" href="#">Next step</a>
+                        </div>
+                    </div>
+                    <!--End of righ side-->
+                </form>
+                <!--End of personal info form-->
+                <!--DONATION INFO FORM-->
+                <form class="donation-info-form">
+                    <!--Start of left side-->
+                    <div class="left-side-section">
+                        <h1>Donation information</h1>
+                        <div class="orange-line"></div>
+                        <div class="baseline-container">
+                            <p class="donation-paragraph">If you are not the acount holder or require an additional
+                                signatory on the account, please download and return the <span>monthly direct debit
+                                </span>donation form.</p>
+                        </div>
+                        <div class="baseline-container">
+                            <label id="bank-account">Name of account holder</label>
+                            <input type="text" placeholder="Mr J Bloggs">
+                        </div>
+                        <div class="baseline-container checked">
+                            <label id="account-number">Account number</label>
+                            <input type="text" placeholder="5554546546">
+                        </div>
+                        <div class="baseline-container sort-row">
+                            <label id="sort-code">Sort code</label>
+                            <input class="small-input" type="text" placeholder="12" maxlength="2">
+                            <input class="small-input" type="text" placeholder="34" maxlength="2">
+                            <input class="small-input" type="text" placeholder="56" maxlength="2">
+                        </div>
+
+                        <div class="baseline-container">
+                            <label id="your-donation">Your donation</label>
+                            <input type="text" placeholder="$30">
+                        </div>
+                        <div class="baseline-container payment-row">
+                            <label id="payment-date">Payment date</label>
+                            <div class="dates">
+                                <input type="radio" name="payment-date" id="first-jully">
+                                <span>1st Jully</span><br>
+                                <input type="radio" name="payment-date" id="fiftinth-jully">
+                                <span>15th Jully</span>
+                            </div>
+                        </div>
+                        <div class="baseline-container">
+                            <label id="frequency">Payment frequency</label>
+                            <select name="months" id="select-option">
+                                <option value="monthly">Monthly</option>
+                                <option value="yearly">Yearly</option>
+                            </select>
+                        </div>
+                        <div class="baseline-container checkbox-div">
+                            <input type="checkbox" name="confirm" id="check-me-again">
+                            <p>I confirm that I am the account holder and the only person required to authorise debits
+                                from
+                                this account.</p>
+                        </div>
+                    </div>
+                    <!--End of left side section-->
+                    <!--Start of right side-->
+                    <div class="left-side-section">
+                        <h1>Gift aid</h1>
+                        <div class="orange-line"></div>
+                        <div class="orange-box">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus mollitia reprehenderit
+                                earum impedit perspiciatis maiores unde non cupiditate voluptatem.</p>
+                        </div>
+                        <div class="white-box">
+                            <p>I confirm I have paid or will pay an amount of Income Tax and / or Capital Gains Tax for
+                                each
+                                tax year (6 April to 5 April) that is at least equal to the amount of tax that all the
+                                charities or Community Amateur Sports Clubs (CASs) that I donate to will reclaim on my
+                                gifts
+                                for that tax year. By ticking this box I confirm that I want to treat all donations I
+                                have
+                                made for the last 4 years and any future donations I may make, as Gift aid donations
+                                until
+                                further notice.</p>
+                            <p>I understand that other taxes such as VAT and Council Tax do not qualify. I understand
+                                the
+                                charity will redeem 28p of tax on every €1 that I give or after 6 April 2019.</p>
+                            <div class="baseline-container checkbox-div">
+                                <input type="checkbox" name="confirm" id="check-me-bre">
+                                <p class="short-statement">I have read and understan above statement.</p>
+                            </div>
+                        </div>
+                        <div class="button-next-step">
+                            <a class="btn btn-orange wide" href="#">Next step</a>
+                        </div>
+                    </div>
+                    <!--End of righ side-->
+                </form>
+                <!--End of donation info form-->
+                <!--PERSONAL INFO FORM-->
+                <form class="payment-info-form">
+                    <div class="one-headline">
+                        <h1>Payment information</h1>
+                        <div class="orange-line"></div>
+                        <div class="orange-box">
+                        </div>
+                    </div>
+                    <!--Start of left side-->
+                    <div class="left-side-section card-name-div">
+                        <div class="baseline-container">
+                            <label id="card-type">Card type</label>
+                            <select name="cards">
+                                <option value="Mr">Visa debit</option>
+                                <option value="Mrs">Master card</option>
+                                <option value="Mrs">American express</option>
+                            </select>
+                        </div>
+                        <div class="baseline-container checked">
+                            <label id="card-number">Card number</label>
+                            <input type="text" placeholder="5545665465466">
+                        </div>
+                        <div class="baseline-container">
+                            <label id="first-name-3">First name</label>
+                            <input type="text" placeholder="Marko">
+                        </div>
+                        <div class="baseline-container">
+                            <label id="surname">Surname</label>
+                            <input type="text" placeholder="Lekic">
+                        </div>
+                    </div>
+                    <!--End of left side section-->
+                    <!--Start of right side-->
+                    <div class="left-side-section card-info-div">
+                        <div class="baseline-container sort-row">
+                            <label id="valid-form">Valid form</label>
+                            <input class="small-input" type="text" placeholder="06" maxlength="2"><span>/ &nbsp;
+                                &nbsp;</span>
+                            <input class="small-input" type="text" placeholder="18" maxlength="2">
+                        </div>
+                        <div class="baseline-container sort-row">
+                            <label id="expiry-date">Expiry date</label>
+                            <input class="small-input" type="text" placeholder="06" maxlength="2"><span>/ &nbsp;
+                                &nbsp;</span>
+                            <input class="small-input" type="text" placeholder="22" maxlength="2">
+                        </div>
+                        <div class="baseline-container">
+                            <label id="issue-number">Issue number</label>
+                            <input class="medium-input" type="number" placeholder="1">
+                        </div>
+                        <div class="baseline-container" style="position: relative;">
+                            <label id="security-code">Security code</label>
+                            <input class="medium-input" type="text" placeholder="5555">
+                            <div class="question-mark"><i class="fas fa-question"></i>
+                                <div class="cvv-number">
+                                    <img src="/img/cvv.jpg" alt="cvv">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-next-step">
+                            <a class="btn btn-orange wide" href="#">Finish</a>
+                        </div>
+                    </div>
+                    <!--End of right side-->
+                </form>
+                <!--Confirmatin section-->
+
+                <form class="confirmation">
+                    <div class="one-headline">
+                        <h1>Thank you</h1>
+                        <div class="orange-line"></div>
+                        <div class="orange-box">
+                        </div>
+                    </div>
+                    <!--Start of left side-->
+                    <div class="left-side-section icon-div">
+                        <i class='far fa-thumbs-up' style='font-size:150px;color:#E56C69'></i>
+                    </div>
+                    <div class="right-side-section plain-text-div">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus quis arcu ut
+                            laoreet.
+                            Suspendisse consectetur arcu neque, ac tincidunt sapien vulputate sed. Duis efficitur, magna
+                            ac
+                            pellentesque dignissim, diam felis posuere ligula, sed congue nisl tellus a arcu. Sed
+                            vestibulum
+                            mattis libero id bibendum. Sed vitae commodo justo, a semper arcu. Sed ullamcorper iaculis
+                            velit
+                            quis aliquet. Ut convallis eros nec metus ultrices, non aliquam sem aliquam.
+                        </p><br>
+                        <p style="margin-bottom: 20px;">Praesent id accumsan odio. Nam sit amet purus fringilla,
+                            bibendum
+                            risus sed, tempus nulla. Curabitur iaculis dictum turpis. Aliquam erat volutpat. Duis velit
+                            diam, euismod quis justo vel, accumsan posuere metus. Nunc ac dapibus tortor, consectetur
+                            dapibus augue. Mauris facilisis finibus venenatis. Morbi orci lectus, congue id mauris a,
+                            imperdiet ultricies orci. Sed lobortis, urna nec posuere tempus, eros elit accumsan metus,
+                            suscipit blandit lectus nisi a libero. Sed lacinia fringilla justo, id cursus est elementum
+                            eget.</p>
+                        <div class="button-next-step return-home">
+                            <a class="btn btn-orange wide" href="#">Return home</a>
+                        </div>
+                    </div>
+                    <!--End of right side-->
+                </form>
+                <!--End of confirmation section-->
+            </div>
+            <!--End of form container-->
+        </section>
+
+        <!--start of footer-->
+        <footer>
+            <div class="footer-container">
+                <div class="left-side">
+                    <div class="contact">
+                        <ul>
+                            <li>P +64 9555 555</li>
+                            <li>P +64 9555 555</li>
+                            <li>E info@email.com</li>
+                            <li class="adress">Address</li>
+                            <li>http://www.lipsum.com/feed/html</li>
+                        </ul>
+                    </div>
+                    <div class="services">
+                        <ul>
+                            <li>Services</li>
+                            <li>Commercial</li>
+                            <li>Distribution</li>
+                            <li>Gas</li>
+                            <li>Generation</li>
+                            <li>Industrial</li>
+                            <li>Telecomms</li>
+                            <li>Transmission</li>
+                            <li>Water</li>
+                        </ul>
+                    </div>
+                    <div class="markets">
+                        <ul>
+                            <li>Markets</li>
+                            <li>Commercial</li>
+                            <li>Industrial</li>
+                            <li>Infrastructure</li>
+                            <li>Resources</li>
+                            <li>Utitlities</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="hseq">
+                        <ul>
+                            <li>HSEQ</li>
+                            <li>Health &</li>
+                            <li>Safety</li>
+                            <li>Environment</li>
+                            <li>Quality</li>
+                        </ul>
+                    </div>
+                    <div class="about">
+                        <ul>
+                            <li>About</li>
+                            <li>History</li>
+                            <li>Structure</li>
+                            <li>People</li>
+                            <li>CSR</li>
+                            <li>Locations</li>
+                            <li>PPV</li>
+                        </ul>
+                    </div>
+                    <div class="careers">
+                        <ul>
+                            <li>Careers</li>
+                            <li>Who we are</li>
+                            <li>Benefits</li>
+                            <li>Programmes</li>
+                            <li>Our People</li>
+                            <li>Roles/</li>
+                            <li>Vacancies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/forms.js"></script>
+    </body>
+
+</html>

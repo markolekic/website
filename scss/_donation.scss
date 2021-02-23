@@ -1,0 +1,138 @@
+.small-input {
+    width: 50px !important;
+    margin-right: 10px !important;
+}
+
+.medium-input {
+    width: 150px !important;
+}
+
+.question-mark {
+    color: #4CAF50;
+    margin-left: 10px;
+}
+
+.cvv-number {
+    width: 160px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    padding: 5px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.question-mark:hover {
+    .cvv-number {
+        display: block;
+        position: absolute;
+        right: 36%;
+        bottom: 45%;
+    }
+}
+
+.donation-paragraph {
+    margin: 0 0 15px;
+    color: $dark-grey;
+    font-weight: 700;
+}
+
+#first-jully,
+#fiftinth-jully {
+    all: revert;
+}
+
+.payment-row {
+    align-items: baseline !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .dates {
+        line-height: 2;
+    }
+
+    span {
+        color: $dark-grey;
+        font-weight: 700;
+        font-size: 14px;
+    }
+}
+
+.orange-box {
+    background-color: $orange-color;
+    margin-bottom: 15px;
+
+    p {
+        color: #fff;
+        padding: 15px;
+    }
+}
+
+.white-box {
+    background-color: #fff;
+    border: 1px solid $orange-color;
+
+    p {
+        padding: 15px;
+        color: $dark-grey;
+        font-weight: 700;
+    }
+
+    .checkbox-div {
+        padding-top: 0;
+
+        p {
+            padding-bottom: 0;
+        }
+    }
+
+    #check-me-bre {
+        margin-left: 20px;
+    }
+}
+
+.one-headline {
+    width: $max-width;
+    margin: 0 auto;
+    position: absolute;
+}
+
+//Queries
+
+@media (max-width: 992px) {
+    .sort-row {
+        flex-direction: row;
+        align-items: baseline !important;
+    }
+
+    .question-mark {
+        position: absolute !important;
+        left: 125px;
+        top: 40px;
+    }
+
+    .one-headline {
+        width: 100%;
+        padding: 0 25px 0 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .medium-input {
+        width: 100% !important;
+    }
+
+    .question-mark {
+        position: relative !important;
+        top: -40px;
+        left: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .one-headline {
+        padding-top: 20px
+    }
+}

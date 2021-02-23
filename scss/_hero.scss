@@ -1,0 +1,71 @@
+#hero-section {
+    background-image: url("/img/Layer 10@1X.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 260px;
+
+    .hero-container {
+        width: $max-width;
+        margin: 0 auto;
+        padding-top: 140px;
+
+        .resaurces,
+        .donations {
+            color: $orange-color;
+            font-weight: 400 !important;
+            background-color: $light-grey;
+            width: -moz-max-content;
+            /* Firefox/Gecko */
+            width: -webkit-max-content;
+            /* Chrome */
+            width: -o-max-content;
+            width: -ms-max-content;
+            margin-bottom: 5px;
+            padding: 10px;
+
+            h1, h2 {
+                font-weight: 300 !important;
+            }
+        }
+
+        .resaurces {
+            width: 130px;
+        }
+
+        .donations {
+            color: $dark-grey;
+            background-color: $light-grey;
+            width: 125px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-container {
+        width: 100% !important;
+        padding-left: 25px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero-section {
+        height: 360px;
+
+        .hero-container {
+            padding-top: 240px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #hero-section {
+        height: 500px;
+
+        .hero-container {
+            padding-top: 380px;
+        }
+    }
+
+}

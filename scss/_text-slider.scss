@@ -1,0 +1,117 @@
+//TEXT SLIDER
+//------
+
+#text-slider-section {
+    padding: 0 25px 70px 25px;
+
+    .slider-container {
+        width: $max-width;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .change-text {
+            width: 30%;
+            overflow: hidden;
+            position: relative;
+
+            .slides {
+                display: none;
+                animation: fade .2s;
+                line-height: 1.5;
+            }
+
+            h2 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 20px;
+                color: $orange-color;
+                font-style: italic;
+                padding: 0;
+            }
+
+            .quotes {
+                font-size: 35px;
+            }
+
+            .end-quotes {
+                font-size: 35px;
+                text-align: right;
+                padding-right: 5px;
+            }
+        }
+
+        .plain-text {
+            width: 60%;
+            border-left: 2px solid lightgray;
+            padding-left: 25px;
+
+            h1 {
+                font-size: 23px;
+                font-weight: 500;
+                padding-bottom: 25px;
+                color: $orange-color;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 2;
+                color: grey;
+            }
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+    .slider-container {
+        width: 100% !important;
+    }
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media only screen and (max-width: 980px) {
+    .slider-container {
+        width: 100% !important;
+
+        .buttons-container {
+            float: left;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .slider-container {
+        flex-direction: column;
+        padding-top: 40px;
+
+        .change-text,
+        .plain-text {
+            width: 100% !important;
+            padding: 0;
+            align-items: center;
+        }
+
+        .plain-text {
+            padding-top: 25px;
+            margin-top: 50px;
+            border-top: 2px solid lightgray;
+            border-left: none !important;
+            padding-left: 0 !important;
+
+        }
+    }
+}

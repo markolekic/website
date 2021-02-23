@@ -1,0 +1,184 @@
+//IMAGE SLIDER
+//----------
+
+.opacity-me {
+    opacity: 0.6;
+    transition: .3s ease-in-out;
+}
+
+.slider {
+    overflow: hidden;
+    font-family: $font-family;
+    font-size: 15px;
+    min-height: 100vh;
+}
+
+.slide::after {
+    content: "";
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: -5%;
+    z-index: 9;
+    transform: skewY(-2deg);
+    background: #fff;
+    opacity: .6;
+}
+
+.content {
+    width: $max-width;
+    margin: 0 auto;
+    padding-top: 25vh;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+
+    .text-content {
+        width: 60%;
+        color: #fff;
+
+        h1 {
+            padding-bottom: 20px;
+            font-size: 60px;
+            font-weight: 300;
+        }
+
+        p {
+            line-height: 2;
+            color: #fff;
+            font-weight: 400;
+            padding: 0;
+        }
+    }
+}
+
+.slide.current {
+    opacity: 1;
+}
+
+.buttons-homepage {
+    display: flex;
+    position: absolute;
+    right: 22%;
+    top: 70%;
+    padding-left: 25px;
+    transition: .2s ease-in-out;
+    color: #fff;
+
+    a {
+        margin: 0 !important;
+        padding: 10px 13px 10px 13px;
+        font-weight: 700;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+
+/*MEDIA QUERIES FOR IMAGE SLIDER*/
+
+@media (max-width: 1500px) {
+    .buttons-homepage {
+        right: 15%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .slide .content {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .buttons-homepage {
+        top: 70vh;
+        right: 7%;
+    }
+}
+
+@media (max-width: 1026px) {
+
+    .content {
+        width: initial;
+        padding-top: 20vh;
+    }
+
+    .buttons-homepage {
+        right: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .content {
+        padding-top: 25vh;
+    }
+
+    .text-content {
+        width: 100 !important;
+        width: 75%;
+
+        h1 {
+            font-size: 35px !important;
+        }
+
+        p {
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .content {
+        padding-top: 30vh;
+    }
+
+    .buttons-homepage {
+        right: 25px;
+        top: 65%;
+    }
+
+    .text-content {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .slide .content {
+        padding-right: 25px;
+        padding-left: 25px;
+        width: initial;
+    }
+
+    .content {
+        padding-top: 25vh;
+    }
+
+    .text-content {
+        p {
+            line-height: 1.5 !important;
+        }
+    }
+}
+
+/* Backgorund Images */
+
+.slide:first-child {
+    background: url('/img/IMG_9857@1X.png') no-repeat center center/cover;
+}
+
+.slide:nth-child(2) {
+    background: url('/img/wind-plants.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(3) {
+    background: url('/img/grass.jpg') no-repeat center top/cover;
+}

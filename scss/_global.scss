@@ -1,0 +1,358 @@
+//Global styles
+
+#step-section {
+    background-color: $light-grey;
+    font-size: 14px;
+    padding: 20px 0 60px;
+
+    h1 {
+        color: $orange-color;
+        font-weight: 300;
+        font-size: 27px;
+    }
+}
+
+
+
+.donation-paragraph {
+    span {
+        color: $orange-color;
+    }
+}
+
+.orange-line {
+    border-bottom: 1px solid $orange-color;
+    margin: 10px 0 25px;
+}
+
+//Containers
+
+.commercial-form,
+.personal-info-form,
+.donation-info-form,
+.payment-info-form,
+.confirmation {
+    width: $max-width;
+    display: none;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.active-form {
+    display: flex;
+}
+
+.left-side-section {
+    width: 45%;
+
+    .baseline-container {
+        display: flex;
+        align-items: center;
+
+        p {
+            padding-top: 0;
+        }
+    }
+
+    label {
+        color: $dark-grey;
+        float: left;
+        width: 125px;
+        font-weight: 700;
+    }
+
+    //Select color change
+    select {
+        height: 50px;
+        padding-left: 10px;
+        color: $dark-grey;
+        font-weight: 700;
+        font-size: 14px;
+        border: transparent;
+        outline: transparent;
+        margin: 7px 0 7px;
+        width: 150px;
+        -moz-appearance: none;
+        /* Firefox */
+        -webkit-appearance: none;
+        /* Safari and Chrome */
+        appearance: none;
+        background: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 24 25" fill="%23FE992A" xmlns="http://www.w3.org/2000/svg"><path d="M4 10.127L12 18.127L20 10.127H4Z" fill="%23FE992A"/></svg>') white no-repeat 98.5% !important;
+        /* !important used for overriding all other customisations */
+    }
+
+    input {
+        height: 50px;
+        padding-left: 15px;
+        width: 300px;
+        margin: 7px 0 7px;
+        font-size: 14px;
+        border: transparent;
+        outline: transparent;
+    }
+}
+
+//Radio color change
+
+input[type='radio'] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50% !important;
+    outline: none !important;
+    border: 1px solid $dark-grey !important;
+}
+
+input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked:before {
+    background: $orange-color;
+}
+
+input[type="radio"]:checked {
+    border-color: $orange-color;
+}
+
+/***checkbox***/
+
+input[type='checkbox'] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    margin-top: 2px;
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border: 1px solid #737C85 !important;
+    border-radius: 2px;
+    position: relative;
+    background-color: #4CAF50;
+}
+
+#check-me-bre {
+    background-color: $light-grey;
+}
+
+#check-me-again,
+#check-me {
+    background-color: #fff;
+}
+
+input[type='checkbox']:checked::before {
+    left: 2px;
+    top: -3px;
+    content: '✔';
+    font-weight: 700;
+    position: absolute;
+    font-size: 13px;
+    color: #FE992A;
+    display: block;
+    text-align: center;
+}
+
+.right-side-section {
+    width: 45%;
+
+    .money {
+        display: inline-block;
+        padding-top: 30px;
+        line-height: 1.7;
+        margin-left: 125px;
+    }
+
+    input {
+        margin-right: 10px;
+    }
+
+    label {
+        width: 124px;
+        color: #737C85;
+        font-weight: 700;
+        float: right;
+    }
+}
+
+//Confirmation form
+
+.confirmation {
+    align-items: flex-start;
+}
+
+.icon-div {
+    width: 26%;
+    margin-top: 70px;
+}
+
+.plain-text-div {
+    width: 74%;
+    margin-top: 70px;
+
+    p {
+        margin-left: 0;
+        padding-bottom: 0;
+        font-weight: 700;
+        color: $dark-grey;
+    }
+}
+
+//Payment info form
+
+.card-name-div,
+.card-info-div {
+    margin-top: 70px;
+}
+
+// Checked questionmark
+
+.checked {
+    position: relative;
+}
+
+.checked::after {
+    content: "\f00c";
+    font-family: FontAwesome;
+    right: -15px;
+    color: #4CAF50;
+    position: absolute;
+}
+
+@media (max-width: 992px) {
+
+    .commercial-form,
+    .personal-info-form,
+    .donation-info-form {
+        width: 100%;
+        padding: 0 25px 0 25px;
+    }
+
+    .confirmation,
+    .payment-info-form {
+        width: 100%;
+    }
+
+    .baseline-container {
+        flex-direction: column;
+        align-items: baseline !important;
+    }
+
+    .left-side-section input {
+        width: 100%;
+    }
+
+    .icon-div {
+        padding-left: 25px;
+    }
+
+    .plain-text-div {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .money {
+        padding-top: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .card-name-div {
+        padding-left: 25px;
+    }
+
+    .card-info-div {
+        margin-top: 105px;
+        padding-right: 25px;
+    }
+
+    #donation {
+        float: left;
+    }
+
+    #bank-account {
+        width: 100%;
+    }
+
+    .checked::after {
+        top: 40px;
+        right: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .confirmation {
+        flex-direction: column;
+        width: 100%;
+
+        .icon-div {
+            text-align: center;
+            padding-top: 20px;
+
+            i {
+                font-size: 150px !important;
+            }
+        }
+
+        .plain-text-div {
+            margin-top: 50px;
+        }
+
+        .right-side-section,
+        .left-side-section {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    .form-container {
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .commercial-form,
+    .personal-info-form,
+    .donation-info-form,
+    .payment-info-form {
+        flex-direction: column;
+
+        .right-side-section,
+        .left-side-section {
+            width: 100%;
+        }
+
+        .right-side-section,
+        .left-side-section {
+            padding-top: 20px;
+        }
+
+        .left-side-section select {
+            width: 100%;
+        }
+
+        .card-info-div {
+            margin-top: 10px;
+        }
+
+        .card-name-div {
+            padding-right: 25px;
+        }
+
+        .card-info-div {
+            padding-left: 25px;
+        }
+
+        #issue-number {
+            margin-top: 15px;
+        }
+    }
+}
