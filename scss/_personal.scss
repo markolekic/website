@@ -1,0 +1,61 @@
+#postcode,
+#house-number {
+    width: 180px;
+}
+
+#check-me,
+#check-me-again,
+#check-me-bre {
+    padding-top: 0;
+    height: 16px;
+    width: 16px;
+    margin: 0;
+    font-size: 14px;
+
+}
+
+.checkbox-div {
+    padding-top: 10px;
+    align-items: baseline !important;
+
+    p {
+        color: $dark-grey;
+        font-weight: 700;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+}
+
+.short-statement {
+    padding: 0 0 15px !important;
+}
+
+.not-checked {
+    position: relative;
+
+    input {
+        border: solid 1px red;
+        position: relative;
+    }
+}
+
+.not-checked::after {
+    content: "\f00d";
+    font-family: FontAwesome;
+    color: red;
+    position: absolute;
+    right: -10px;
+}
+
+//Queries
+
+@media (max-width: 992px) {
+    .checkbox-div {
+        flex-direction: row;
+    }
+
+    .not-checked::after {
+        top: 40px;
+        right: 5px;
+    }
+}

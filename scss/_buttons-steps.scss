@@ -1,0 +1,142 @@
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#buttons-steps {
+    padding: 50px 0 50px;
+
+    .buttons-container-steps {
+        width: $max-width;
+        margin: 0 auto;
+        display: flex;
+        text-align: center;
+
+        .changing-buttons {
+            cursor: pointer;
+            width: 20%;
+            background-color: $orange-color;
+            color: #fff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-right: 1px;
+            margin-left: 1px;
+        }
+    }
+}
+
+/*******Skewed buttons*********
+
+.changing-buttons:nth-child(2),
+.changing-buttons:nth-child(3),
+.changing-buttons:nth-child(4) {
+    transform: skew(10deg);
+    -moz-transform: skew(10deg);
+    -webkit-transform: skew(10deg);
+    -o-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+
+    p {
+        transform: skew(-10deg) !important;
+    }
+}
+
+*************************/
+
+.donate-buttons {
+    margin-top: 45px;
+    display: flex;
+
+    a {
+        padding: 16px 35px 16px 35px;
+        background-color: $orange-color;
+    }
+
+    .btn-grey {
+        background-color: $dark-grey;
+    }
+}
+
+.button-next-step {
+    cursor: pointer;
+    width: 305px;
+    float: right;
+    margin-top: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px 0 16px;
+    background-color: $orange-color;
+}
+
+.return-home {
+    width: 300px;
+    float: right;
+}
+
+//Dynamic classes
+
+.previous-step {
+    background-color: $orange-color !important;
+}
+
+.active-step {
+    background-color: $light-red !important;
+}
+
+.next-step {
+    background-color: $light-grey !important;
+    color: $dark-grey !important;
+}
+
+//Queries
+
+@media (max-width: 994px) {
+
+    .buttons-container-steps {
+        width: 100% !important;
+        padding: 0 25px 0 25px;
+    }
+
+    .button-next-step {
+        width: 100%;
+        float: none;
+    }
+
+    .return-home {
+        width: 300px;
+        float: right;
+    }
+
+    .donate-buttons {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+
+        .buttons-for-donation {
+            margin-top: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+            .btn-grey {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .changing-buttons {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .button-next-step {
+        margin-top: 18;
+    }
+
+    .return-home {
+        width: 100%;
+        float: none;
+    }
+}

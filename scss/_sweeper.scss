@@ -1,0 +1,174 @@
+.container {
+  width: 100%;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+
+.main {
+  .container {
+    .swiper-container {
+      .swiper-wrapper {
+        .swiper-slide {
+          .card-image {
+            border: none;
+            outline: none;
+            border-radius: 2px;
+            position: relative;
+
+            img {
+              display: block;
+              position: relative;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: 70vh;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.img-description {
+  display: none;
+  top: 35%;
+  right: 13%;
+  position: absolute;
+  width: 75%;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-size: 23px;
+
+  h1 {
+    font-weight: 300;
+  }
+
+  p {
+    color: #fff;
+    font-size: 14px;
+  }
+}
+
+.swiper-slide-active {
+  .card-image {
+    background-color: black;
+
+    .img-description {
+      display: block;
+      opacity: 1;
+    }
+
+    img {
+      opacity: 0.5;
+    }
+
+    p {
+      display: none;
+    }
+  }
+}
+
+
+
+.swiper-slide-active:hover {
+  .card-image {
+    background-color: black;
+
+    img {
+      opacity: 0.5;
+    }
+
+    .img-description {
+      display: block;
+      opacity: 1;
+
+      p {
+        display: block;
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
+.buttons-homepage-slider {
+  text-align: center;
+  display: block;
+  padding: 0 0 50px;
+
+  span {
+    padding: 10px 13px 10px 13px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: $light-red;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+}
+
+.thin-line {
+  width: $max-width;
+  margin: 0 auto;
+  border-bottom: 2px solid $light-grey;
+}
+
+@media(max-width: 1020px) {
+
+  .swiper-slide:hover {
+    .img-description {
+      p {
+        display: none;
+      }
+    }
+  }
+
+  .thin-line {
+    width: 90%;
+  }
+}
+
+@media(max-width: 600px) {
+
+  .container {
+    padding-bottom: 0;
+  }
+
+  .img-description {
+    top: 60%;
+  }
+
+  .swiper-slide-active:hover {
+    .card-image {
+      background-color: black;
+  
+      img {
+        opacity: 0.5;
+      }
+  
+      .img-description {
+        display: block;
+        opacity: 1;
+ 
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .buttons-homepage-slider {
+    position: absolute;
+    z-index: 998;
+    top: 63%;
+    left: 0;
+    right: 0;
+  }
+
+  .thin-line {
+    display: none;
+  }
+}

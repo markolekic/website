@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!--start of header-->
+    <header id="header-section">
+        <!--start of nav container-->
+        <div class="nav-container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <img src="img/leaf.png" alt="Logo">
+                </div>
+                <!--hamburger menu-->
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <!--end of hamburger menu-->
+                <!--start of nav menu-->
+                <div class="nav-menu">
+                    <ul class="menu-list">
+                        <li class="main-menu-title"><a href="index.html">Commercial</a></li>
+                        <!--Industrial menu-->
+                        <li class="main-menu-title industrial-drop">Industrial &#9662;
+                            <!--start od sub menu-->
+                            <div class="sub-menu">
+                                <ul class="dropdown-menu first-sub-menu">
+                                    <li>Proin tristinque</li>
+                                    <li>Lorem Ipsum</li>
+                                    <li>Dolor sit amet</li>
+                                    <li>Consectetur adipiscim elit</li>
+                                    <li>Vivamus pretium</li>
+                                    <li>Mauris ficilies vestibulium prottitor</li>
+                                    <li>Lacus actu comando orci</li>
+                                </ul>
+                                <ul class="dropdown-menu second-sub-menu">
+                                    <li>Duit hendrerit mauris</li>
+                                    <li>Duit hendrerit ligula</li>
+                                    <li>Et utrices masa loborotis sed</li>
+                                    <li>Crass efictuar</li>
+                                    <li>Aliqum ipsum rutrum fermentum</li>
+                                    <li>Aenen grafida congue mauris vitae varis eros dictim vehickla</li>
+                                    <li>Man mattis</li>
+                                    <li>Lectus vitae iaclus accumsan</li>
+                                </ul>
+                                <ul class="dropdown-menu third-sub-menu">
+                                    <li>Cras sit amet</li>
+                                    <li>Quisque feugiat feugiat efficitur</li>
+                                    <li>Cras mut ulamorcet dul</li>
+                                    <li>A tinicudunt nisi</li>
+                                    <li>Sed fugiat lorem vitae magna</li>
+                                    <li>Pellentesque carsus</li>
+                                    <li>Sed id eulsmod erat id maximus me</li>
+                                </ul>
+                            </div>
+                            <!--end of sub menu-->
+                        </li>
+                        <!--End Industrial menu-->
+                        <li class="main-menu-title"><a href="slider.html">Infrastructure</a></li>
+                        <li class="main-menu-title"><a href="forms.html">Resaurces</a></li>
+                        <li class="main-menu-title">Utilities</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--end of nav container-->
+    </header>
+
+    <!--Start of caurosel-->
+    <main class="main">
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card-image">
+                            <img src="img/1.jpg" alt="Image Slider">
+                            <div class="img-description">
+                                <h1>Donec nec fringilla elit</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat atque
+                                    nisi perferendis ea officia obcaecati. Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Repellat nulla assumenda distinctio ea tempore nam ipsa facere
+                                    officia sint laboriosam? Magnam delectus sint doloremque animi obcaecati itaque
+                                    saepe nulla sed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-image">
+                            <img src="img/2.jpg" alt="Image Slider">
+                            <div class="img-description">
+                                <h1>Quisque sed suscipit nunc</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat atque
+                                    nisi perferendis ea officia obcaecati. Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Repellat nulla assumenda distinctio ea tempore nam ipsa facere
+                                    officia sint laboriosam? Magnam delectus sint doloremque animi obcaecati itaque
+                                    saepe nulla sed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-image">
+                            <img src="img/3.jpg" alt="Image Slider">
+                            <div class="img-description">
+                                <h1>Nullam iaculis eleifend</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat atque
+                                    nisi perferendis ea officia obcaecati. Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Repellat nulla assumenda distinctio ea tempore nam ipsa facere
+                                    officia sint laboriosam? Magnam delectus sint doloremque animi obcaecati itaque
+                                    saepe nulla sed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="buttons-homepage-slider">
+            <span id="b-prev">&lt;</span>
+            <span id="b-next">&gt;</span>
+        </div>
+        <!--End of caurosel with buttons-->
+        <div class="thin-line"></div>
+    </main>
+
+    <!--Start of text block-->
+
+    <section id="text-block">
+        <div class="text-info">
+            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus itaque iure ullam
+                impedit debitis consectetur alias iusto perspiciatis fugit, minus quidem ducimus sunt eveniet atque
+                dolore obcaecati quaerat esse minima?</p>
+            <a href="#accordian-section" class="read-more">Read more &#9662;</a>
+        </div>
+    </section>
+
+    <!--End of text block-->
+
+    <div id="accordian-section">
+        <div class="accordian-container">
+            <div class="accordian-image">
+                <img src="img/flower.png" alt="flower">
+            </div>
+            <div class="accordian-menu">
+                <div class="container-acc">
+                    <button class="accordion">Description</button>
+                    <div class="accordion-content">
+                        <p>Aenean blandit orci lectus, mattis suscipit nunc mollis eget. In luctus bibendum viverra.
+                            Praesent fermentum ligula et gravida tempus. Etiam sollicitudin libero turpis, vel posuere
+                            nulla efficitur vitae.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias
+                            necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo?</p>
+                    </div>
+                    <button class="accordion">How to use</button>
+                    <div class="accordion-content">
+                        <p>Etiam faucibus, nibh at imperdiet commodo, lorem nunc consequat lacus, vitae aliquet diam
+                            tortor vitae odio. Suspendisse libero augue, lobortis id justo id, bibendum pharetra felis.
+                            Pellentesque turpis turpis, lacinia sit amet fermentum vitae, dignissim non risus.
+                            Pellentesque congue congue lacus, a suscipit ex rutrum ut.</p>
+                    </div>
+                    <button class="accordion">Composition</button>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias
+                            necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione
+                            cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?</p>
+                    </div>
+                    <button class="accordion">Shipping and return</button>
+                    <div class="accordion-content">
+                        <p>Aenean blandit orci lectus, mattis suscipit nunc mollis eget. In luctus bibendum viverra.
+                            Praesent fermentum ligula et gravida tempus. Etiam sollicitudin libero turpis, vel posuere
+                            nulla efficitur vitae.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias
+                            necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="left-side">
+                <div class="contact">
+                    <ul>
+                        <li>P +64 9555 555</li>
+                        <li>P +64 9555 555</li>
+                        <li>E info@email.com</li>
+                        <li class="adress">Address</li>
+                        <li>http://www.lipsum.com/feed/html</li>
+                    </ul>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Services</li>
+                        <li>Commercial</li>
+                        <li>Distribution</li>
+                        <li>Gas</li>
+                        <li>Generation</li>
+                        <li>Industrial</li>
+                        <li>Telecomms</li>
+                        <li>Transmission</li>
+                        <li>Water</li>
+                    </ul>
+                </div>
+                <div class="markets">
+                    <ul>
+                        <li>Markets</li>
+                        <li>Commercial</li>
+                        <li>Industrial</li>
+                        <li>Infrastructure</li>
+                        <li>Resources</li>
+                        <li>Utitlities</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="hseq">
+                    <ul>
+                        <li>HSEQ</li>
+                        <li>Health &</li>
+                        <li>Safety</li>
+                        <li>Environment</li>
+                        <li>Quality</li>
+                    </ul>
+                </div>
+                <div class="about">
+                    <ul>
+                        <li>About</li>
+                        <li>History</li>
+                        <li>Structure</li>
+                        <li>People</li>
+                        <li>CSR</li>
+                        <li>Locations</li>
+                        <li>PPV</li>
+                    </ul>
+                </div>
+                <div class="careers">
+                    <ul>
+                        <li>Careers</li>
+                        <li>Who we are</li>
+                        <li>Benefits</li>
+                        <li>Programmes</li>
+                        <li>Our People</li>
+                        <li>Roles/</li>
+                        <li>Vacancies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="/js/slider.js"></script>
+</body>
+
+</html>

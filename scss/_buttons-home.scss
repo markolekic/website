@@ -1,0 +1,36 @@
+//Buttons
+//--------
+
+.buttons-homepage {
+    text-align: right;
+    padding-top: 90px;
+    padding-right: 15px;
+
+    a {
+        background-color: $light-orange-color;
+        margin: 0 !important;
+    }
+
+    #next-red {
+        background-color: $light-red;
+    }
+}
+
+.buttons-container {
+    display: flex;
+    float: right;
+    padding-top: 30px;
+
+    a {
+        padding: 10px 13px 10px 13px;
+        font-weight: 700;
+        color: $white-color;
+        background-color: $ultra-light-orange;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+    }
+    
+    #next-orange {
+        background-color: $orange-color;
+    }
+}
