@@ -57,6 +57,7 @@ header {
                 -o-transform: rotate(135deg);
                 transform: rotate(135deg);
                 margin-top: .9rem;
+                padding: 1px;
             }
 
             .toggle-button.open span:nth-child(2) {
@@ -70,6 +71,7 @@ header {
                 -o-transform: rotate(-135deg);
                 transform: rotate(-135deg);
                 margin-bottom: .6rem;
+                padding: 1px;
             }
 
             .menu-list {
