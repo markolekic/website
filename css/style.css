@@ -65,8 +65,7 @@ header {
         -moz-transform: rotate(-135deg);
         -o-transform: rotate(-135deg);
         transform: rotate(-135deg);
-        margin-bottom: .6rem;
-        padding: 1px; }
+        margin-bottom: .6rem; }
       header .nav-container .main-nav .menu-list {
         display: flex;
         font-weight: 700;
@@ -335,13 +334,13 @@ header {
 
 /* Backgorund Images */
 .slide:first-child {
-  background: url("/img/IMG_9857@1X.png") no-repeat center center/cover; }
+  background: url("../img/IMG_9857@1X.png") no-repeat center center/cover; }
 
 .slide:nth-child(2) {
-  background: url("/img/wind-plants.jpg") no-repeat center center/cover; }
+  background: url("../img/wind-plants.jpg") no-repeat center center/cover; }
 
 .slide:nth-child(3) {
-  background: url("/img/grass.jpg") no-repeat center top/cover; }
+  background: url("../img/grass.jpg") no-repeat center top/cover; }
 
 #text-slider-section {
   padding: 0 25px 70px 25px; }
@@ -1027,7 +1026,7 @@ input[type='checkbox']:checked::before {
       margin-top: 15px; } }
 
 #hero-section {
-  background-image: url("/img/Layer 10@1X.png");
+  background-image: url("../img/Layer 10@1X.png");
   background-repeat: no-repeat;
   background-position: center;
   background-repeat: no-repeat;
