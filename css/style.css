@@ -43,29 +43,28 @@ header {
         flex-direction: column;
         height: 20px;
         background-color: none !important; }
-      header .nav-container .main-nav .toggle-button {
-        padding: 0; }
-        header .nav-container .main-nav .toggle-button .bar {
-          height: 3px;
-          width: 100%;
-          background-color: #fff;
-          border-radius: 10px;
-          transition: 0.4s; }
+      header .nav-container .main-nav .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        transition: 0.4s; }
       header .nav-container .main-nav .toggle-button.open span:nth-child(1) {
         -webkit-transform: rotate(135deg);
         -moz-transform: rotate(135deg);
         -o-transform: rotate(135deg);
         transform: rotate(135deg);
-        margin-top: .9rem; }
+        margin-top: .9rem;
+        padding: 1px; }
       header .nav-container .main-nav .toggle-button.open span:nth-child(2) {
-        opacity: 0;
-        left: -60px; }
+        opacity: 0; }
       header .nav-container .main-nav .toggle-button.open span:nth-child(3) {
         -webkit-transform: rotate(-135deg);
         -moz-transform: rotate(-135deg);
         -o-transform: rotate(-135deg);
         transform: rotate(-135deg);
-        margin-bottom: .6rem; }
+        margin-bottom: .6rem;
+        padding: 1px; }
       header .nav-container .main-nav .menu-list {
         display: flex;
         font-weight: 700;
@@ -96,7 +95,7 @@ header {
 
 .industrial-drop:hover::before {
   content: "";
-  width: 81px;
+  width: 82px;
   top: 75px;
   margin-left: -25px;
   position: absolute;
